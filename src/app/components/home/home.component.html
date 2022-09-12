@@ -1,0 +1,44 @@
+
+    <mat-toolbar>
+       
+            <div fxLayout="row" fxLayoutAlign="space-between center" class="header-cont"> <img src="assets/logo.jpg" style="width: 170px;"/>
+              <div></div>  <button mat-icon-button color="primary"  [matMenuTriggerFor]="menu"> <mat-icon>more_vert</mat-icon></button>
+            
+              <mat-menu #menu="matMenu">
+                <button mat-menu-item>
+                    <span>Engish</span></button>
+                <button mat-menu-item routerLink="/login">
+                    <span>Arabic</span></button>
+              </mat-menu></div>
+            
+      
+    
+    </mat-toolbar>
+
+  <app-menu></app-menu>
+  <div class="content">
+    <div class="sub-content">
+    <h1>Welcome to VFS Global</h1>
+<h3> We are the official partner of the Embassy of Belgium in India</h3>
+</div>
+<div class="row menu">
+    <div class="col-md-3" *ngFor="let s of submenu"><mat-card class="example-card">
+        <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+        <mat-card-title>{{s.header}}</mat-card-title>
+        <div fxLayout="column" fxLayoutAlign="flex-end">
+        <mat-card-content  class="box-cont">
+          <p>{{s.body}}</p>
+          <!-- <p>text</p> -->
+        </mat-card-content>
+        <mat-divider inset></mat-divider>
+        <mat-card-actions  > 
+            <button mat-raised-button class="btn btn-warning w-100"><div fxLayout="row" fxLayoutAlign="space-between center">
+                {{s.buttonText}} <mat-icon>play_arrow</mat-icon></div></button>
+        </mat-card-actions>
+    </div>
+      </mat-card></div>
+</div>
+
+
+  </div>
+

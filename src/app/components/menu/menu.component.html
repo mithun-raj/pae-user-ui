@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <!-- <button mat-icon-button>
+       <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+      </button> -->
+      <!-- <h1>SimpleCRM</h1>
+      <span class="menu-spacer"></span> -->
+      <div>
+          
+        <a mat-button [routerLink]="'download'" routerLinkActive="activebutton" > Home </a>
+        <a mat-button [routerLink]="'upload'" routerLinkActive="activebutton" > Apply For a Visa </a>
+        <a mat-button [routerLink]="'users'" routerLinkActive="activebutton" > Book an appointment </a>
+        <a mat-button [routerLink]="'audit'" routerLinkActive="activebutton" > Attend a center </a>
+        <a mat-button [routerLink]="'shopping'" routerLinkActive="activebutton" > Premium services </a>
+        <a mat-button [routerLink]="'shopping'" routerLinkActive="activebutton" > Track your Application </a>
+
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
