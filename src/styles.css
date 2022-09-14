@@ -2,3 +2,12 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.editcms {
+    border: 1px dashed #505962;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.hover-edit {
+    float: right;
+}

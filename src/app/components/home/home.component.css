@@ -1,6 +1,4 @@
-.header-cont {
-    width: 100%;
-}
+
 .content {
     padding-left: 20px;
     padding-right: 20px;
@@ -27,7 +25,20 @@ mat-toolbar {
     color: #fff;
     padding: 15px !important;
 }
-.box-cont{    height: 85px}
+.box-cont{    
+    height: 85px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;}
+    .box-head{    
+        height: 22px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;}
 .mat-card-title{
     font-size: 22px !important;
 }

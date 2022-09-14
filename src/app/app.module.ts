@@ -8,12 +8,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuComponent } from './components/menu/menu.component';
 import { MaterialModule } from './components/material/material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HeaderComponent } from './components/header/header.component';
+import { ContainerComponent } from './components/container/container.component';
+import { CmseditDirective } from './_shared/directives/cmsedit/cmsedit.directive';
+import { EditpopupComponent } from './_shared/editpopup/editpopup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    MenuComponent
+    MenuComponent,
+    HeaderComponent,
+    ContainerComponent,
+    CmseditDirective,
+    EditpopupComponent,
   ],
   imports: [
     BrowserModule,

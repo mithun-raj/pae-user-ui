@@ -7,12 +7,12 @@
       <span class="menu-spacer"></span> -->
       <div>
           
-        <a mat-button [routerLink]="'download'" routerLinkActive="activebutton" > Home </a>
-        <a mat-button [routerLink]="'upload'" routerLinkActive="activebutton" > Apply For a Visa </a>
-        <a mat-button [routerLink]="'users'" routerLinkActive="activebutton" > Book an appointment </a>
-        <a mat-button [routerLink]="'audit'" routerLinkActive="activebutton" > Attend a center </a>
-        <a mat-button [routerLink]="'shopping'" routerLinkActive="activebutton" > Premium services </a>
-        <a mat-button [routerLink]="'shopping'" routerLinkActive="activebutton" > Track your Application </a>
+        <a mat-button [routerLink]="'download'" routerLinkActive="activebutton"  appCmsedit="editcms"> {{appendString('Header1')}} </a>
+        <a mat-button [routerLink]="'upload'" routerLinkActive="activebutton"  appCmsedit="editcms"> {{appendString('Header2')}} </a>
+        <a mat-button [routerLink]="'users'" routerLinkActive="activebutton"  appCmsedit="editcms"> {{appendString('Header3')}} </a>
+        <a mat-button [routerLink]="'audit'" routerLinkActive="activebutton"  appCmsedit="editcms"> {{appendString('Header4')}} </a>
+        <a mat-button [routerLink]="'shopping'" routerLinkActive="activebutton"  appCmsedit="editcms"> {{appendString('Header5')}}s </a>
+        <a mat-button [routerLink]="'shopping'" routerLinkActive="activebutton"  appCmsedit="editcms"> {{appendString('Header6')}} </a>
 
       </div>
     </mat-toolbar-row>

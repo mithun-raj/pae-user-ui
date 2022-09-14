@@ -1,0 +1,5 @@
+<div   [ngClass]="{'lang-arabic': selectedLang === 'AR'}">
+<app-header (langChangeEmit)="langChange($event)"></app-header>
+  <app-menu [selectedLang]="selectedLang"></app-menu>
+  <app-home [selectedLang]="selectedLang"></app-home>
+</div>

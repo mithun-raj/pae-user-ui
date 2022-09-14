@@ -1,0 +1,227 @@
+[
+
+    {
+
+        "language": "EN-US",
+
+        "pageName": "Home",
+
+        "component": "Header",
+
+        "content": "Welcome to VFS Global",
+
+        "version": "v1",
+
+        "id": 1
+
+    },
+
+    {
+
+        "language": "EN-US",
+
+        "pageName": "Home",
+
+        "component": "SubHeader",
+
+        "content": "We are the official partner of the Embassy of Belgium in India",
+
+        "version": "v1",
+
+        "id": 3
+
+    },
+
+    {
+
+        "language": "EN-US",
+
+        "pageName": "Home",
+
+        "component": "SubMenuHeader1",
+
+        "content": "Apply for a visa",
+
+        "version": "v2",
+
+        "id": 4
+
+    },
+
+    {
+
+        "language": "EN-US",
+
+        "pageName": "Home",
+
+        "component": "SubMenuHeader2",
+
+        "content": "Book an appointment",
+
+        "version": "v2",
+
+        "id": 4
+
+    },
+
+    {
+
+        "language": "EN-US",
+
+        "pageName": "Home",
+
+        "component": "SubMenuHeader3",
+
+        "content": "Find a centre",
+
+        "version": "v2",
+
+        "id": 4
+
+    },
+
+    {
+
+        "language": "EN-US",
+
+        "pageName": "Home",
+
+        "component": "SubMenuHeader4",
+
+        "content": "Premium services",
+
+        "version": "v2",
+
+        "id": 4
+
+    },
+
+    {
+
+        "language": "EN-US",
+
+        "pageName": "Home",
+
+        "component": "SubMenuBody1",
+
+        "content": "Find information and begin your application",
+
+        "version": "v2",
+
+        "id": 4
+
+    },
+
+    {
+
+        "language": "EN-US",
+
+        "pageName": "Home",
+
+        "component": "SubMenuBody2",
+
+        "content": "Schedule your appointment with us",
+
+        "version": "v2",
+
+        "id": 4
+
+    },
+
+    {
+
+        "language": "EN-US",
+
+        "pageName": "Home",
+
+        "component": "SubMenuBody3",
+
+        "content": "Information about your local centre",
+
+        "version": "v2",
+
+        "id": 4
+
+    },
+
+    {
+
+        "language": "EN-US",
+
+        "pageName": "Home",
+
+        "component": "SubMenuBody4",
+
+        "content": "Enjoy a faster, more convenient and more luxurious application",
+
+        "version": "v2",
+
+        "id": 4
+
+    },
+
+    {
+
+        "language": "EN-US",
+
+        "pageName": "Home",
+
+        "component": "SubMenubutton1",
+
+        "content": "Start Now",
+
+        "version": "v2",
+
+        "id": 4
+
+    },
+
+    {
+
+        "language": "EN-US",
+
+        "pageName": "Home",
+
+        "component": "SubMenubutton2",
+
+        "content": "Book Now",
+
+        "version": "v2",
+
+        "id": 4
+
+    },
+
+    {
+
+        "language": "EN-US",
+
+        "pageName": "Home",
+
+        "component": "SubMenubutton3",
+
+        "content": "Find Now",
+
+        "version": "v2",
+
+        "id": 4
+
+    },
+
+    {
+
+        "language": "EN-US",
+
+        "pageName": "Home",
+
+        "component": "SubMenubutton4",
+
+        "content": "View Services",
+
+        "version": "v2",
+
+        "id": 4
+
+    }
+
+]
