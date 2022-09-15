@@ -1,5 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import { Directive, ElementRef, HostListener, Inject, Input, Renderer2 } from '@angular/core';
+import { Directive, ElementRef, EventEmitter, HostListener, Inject, Input, Output, Renderer2 } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { EditpopupComponent } from '../../editpopup/editpopup.component';
 
@@ -7,14 +7,17 @@ import { EditpopupComponent } from '../../editpopup/editpopup.component';
   selector: '[appCmsedit]'
 })
 export class CmseditDirective {
-editButton: any;
+  @Input('propertyName') propertyName: any;
+  @Input('propertyVal') propertyVal: any;
+  @Input('appCmsedit') hoverClass:any;  
+  @Output() changeValue: EventEmitter<any> = new EventEmitter<any>();
+  editButton: any;
   constructor(public elementRef:ElementRef, private renderer: Renderer2,
     @Inject(DOCUMENT) private document: Document,public dialog: MatDialog) { 
       this.renderer.listen(elementRef.nativeElement, 'click', (event) => {
         this.openDialog();
       })
     }
-  @Input('appCmsedit') hoverClass:any;  
 
   @HostListener('mouseenter') onMouseEnter() {
     this.elementRef.nativeElement.classList.add(this.hoverClass);
@@ -25,18 +28,26 @@ editButton: any;
  }
 
   @HostListener('mouseleave') onMouseLeave() {
-    this.elementRef.nativeElement.classList.remove(this.hoverClass);
+    this.elementRef.nativeElement.classList.remove(this.hoverClass.class);
     // this.renderer.removeChild(this.elementRef.nativeElement, this.editButton);
   }
   openDialog(): void {
+    const payLoad = {
+      className: this.hoverClass,
+      propertyName: this.propertyName,
+      propertyValue: this.propertyVal
+    };
     const dialogRef = this.dialog.open(EditpopupComponent, {
-      width: '250px',
-      // data: {name: this.name, animal: this.animal},
+      width: '350px',
+      data: payLoad,
     });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
       // this.animal = result;
+      if (result.status) {
+        this.changeValue.emit(result);
+      }
     });
   }
 }

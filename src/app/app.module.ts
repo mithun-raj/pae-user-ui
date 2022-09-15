@@ -12,6 +12,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { ContainerComponent } from './components/container/container.component';
 import { CmseditDirective } from './_shared/directives/cmsedit/cmsedit.directive';
 import { EditpopupComponent } from './_shared/editpopup/editpopup.component';
+import { SharedModule } from './_shared/shared.module';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,9 @@ import { EditpopupComponent } from './_shared/editpopup/editpopup.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,MaterialModule,FlexLayoutModule
+    BrowserAnimationsModule,MaterialModule,FlexLayoutModule, SharedModule, HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

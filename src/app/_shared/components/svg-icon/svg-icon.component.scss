@@ -1,0 +1,81 @@
+// Sizes
+
+.xxs-small {
+  height: 10px;
+  width: 10px;
+}
+
+.xs-small {
+  height: 14px;
+  width: 14px;
+}
+
+.small {
+  height: 16px;
+  width: 16px;
+}
+
+.medium {
+  height: 24px;
+  width: 24px;
+}
+
+.medium-large {
+  height: 30px;
+  width: 30px;
+}
+
+.large {
+  height: 48px;
+  width: 48px;
+}
+
+.xl-large {
+  height: 96px;
+  width: 96px;
+}
+
+.xxl-large {
+  height: 120px;
+  width: 120px;
+}
+
+.xxxl-large {
+  height: 144px;
+  width: 144px;
+}
+
+.xxxxl-large {
+  height: 192px;
+  width: 192px;
+}
+.custom-large {
+  height: 61px;
+  width: 481px;
+}
+
+// Colors
+
+.inherit {
+  color: inherit;
+  fill: currentColor;
+}
+
+.royal-blue {
+  fill: #4161e9;
+}
+
+// center icon
+mat-icon {
+  display: flex;
+}
+.custom-no-data {
+  width: 289px;
+  height: 203px;
+}
+
+
+// .menu-icon {
+  // height: 16.110960006713867px;
+  // width: 20px;
+// }

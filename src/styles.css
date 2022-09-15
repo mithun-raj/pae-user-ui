@@ -11,3 +11,48 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .hover-edit {
     float: right;
 }
+
+.common-button {
+    width: 85px;
+    float: left;
+    margin-left: 15px;
+    display: block;
+  }
+  .common-button button {
+    width: 100%;
+    float: left;
+    float: left;
+    height: 35px;
+  }
+  
+.next-btn button {
+    width: 100% !important;
+    border-radius: 5px !important;
+    background-color: #0a4d79 !important;
+    color: #ffffff !important;
+    font-size: 12px !important;
+    border: 1px solid #0D4B7E !important;
+}
+.next-btn button[disabled] {
+    width: 100% !important;
+    border-radius: 5px !important;
+    background-color: #c0e3ff !important;
+    color: rgba(71, 82, 92, 0.7) !important;
+    border: 1px solid #c0e3ff !important;
+    font-size: 12px !important;
+}
+.back-btn button[disabled] {
+    width: 100% !important;
+    border-radius: 5px !important;
+    background-color: #c0e3ff !important;
+    color: rgba(71, 82, 92, 0.7) !important;
+    font-size: 12px !important;
+}
+.back-btn button {
+    width: 100% !important;
+    font-size: 12px !important;
+    background: #FFFFFF !important;
+    color: #0D4B7E !important;
+    border: 1px solid #0D4B7E !important;
+    box-sizing: border-box !important;
+}

@@ -1,28 +1,42 @@
-
-
-  <div class="content">
-    <div class="sub-content">
-    <h1 appCmsedit="editcms">{{appendString('header')}}</h1>
-<h3 appCmsedit="editcms"> {{appendString('subheader')}}</h3>
-</div>
-<div class="row menu">
-    <div class="col-md-3" *ngFor="let s of submenu"><mat-card class="example-card">
-        <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
-        <mat-card-title class="box-head" appCmsedit="editcms">{{appendString(s.header)}}</mat-card-title>
-        <div fxLayout="column" fxLayoutAlign="flex-end">
-        <mat-card-content  class="box-cont">
-          <p appCmsedit="editcms">{{appendString(s.body)}}</p>
-          <!-- <p>text</p> -->
-        </mat-card-content>
-        <mat-divider inset></mat-divider>
-        <mat-card-actions  > 
-            <button mat-raised-button class="btn btn-warning w-100"><div fxLayout="row" fxLayoutAlign="space-between center" appCmsedit="editcms">
-                {{appendString(s.buttonText)}} <mat-icon>play_arrow</mat-icon></div></button>
-        </mat-card-actions>
-    </div>
-      </mat-card></div>
-</div>
-
-
+<div class="content">
+  <div class="sub-content">
+    <h1 appCmsedit="editcms" [propertyName]="'header'" (changeValue)="changeValue('header', $event)" [propertyVal]="appendString('header')">
+      {{appendString('header')}}
+    </h1>
+    <h3 appCmsedit="editcms" [propertyName]="'header'" (changeValue)="changeValue('subheader', $event)" [propertyVal]="appendString('subheader')"> 
+      {{appendString('subheader')}}
+    </h3>
   </div>
+  <div class="row menu">
+    <div class="col-md-3" *ngFor="let s of submenu">
+      <mat-card class="example-card">
+        <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+        <mat-card-title class="box-head" appCmsedit="editcms" 
+          [propertyName]="s.header" (changeValue)="changeValue(s.header, $event)" 
+          [propertyVal]="appendString(s.header)">
+            {{ appendString(s.header) }}
+        </mat-card-title>
+        <div fxLayout="column" fxLayoutAlign="flex-end">
+          <mat-card-content class="box-cont">
+            <p appCmsedit="editcms" [propertyName]="s.body" (changeValue)="changeValue(s.body, $event)"  [propertyVal]="appendString(s.body)">
+              {{ appendString(s.body) }}
+            </p>
+            <!-- <p>text</p> -->
+          </mat-card-content>
+          <mat-divider inset></mat-divider>
+          <mat-card-actions>
+            <button mat-raised-button class="btn btn-warning w-100">
+              <div fxLayout="row" fxLayoutAlign="space-between center" appCmsedit="editcms" 
+              (changeValue)="changeValue(s.buttonText, $event)"
+              [propertyName]="s.buttonText" [propertyVal]="appendString(s.buttonText)">
+                {{appendString(s.buttonText)}} 
+                <mat-icon>play_arrow</mat-icon>
+              </div>
+            </button>
+          </mat-card-actions>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>
 

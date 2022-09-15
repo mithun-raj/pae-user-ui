@@ -1,1 +1,30 @@
-<p>editpopup works!</p>
+<div fxLayout="row" class="parent-1" fxLayout.xs="column"  fxLayoutAlign="space-between start" >
+    <div class="font-header">
+        Edit
+    </div>
+    <div class="child-2">
+        <span class="close" aria-role="button" tabindex="0">
+            <app-svg-icon [name]="'close_black'" [size]="'medium'" [clickable]="true" (click)="closeDialogue()">
+            </app-svg-icon>
+        </span>
+    </div>
+</div>
+<form [formGroup]="form" autocomplete="off">
+    <div class="form-group">
+        <mat-form-field appearance="outline" class="margin w-100">
+          <input matInput type="text" appSpecialIsAlphaNumeric formControlName="propertyTextBox"  placeholder="">
+        </mat-form-field>
+    </div>
+    <div mat-dialog-actions align="end">
+      <div class="common-button">
+        <div class="back-btn">
+          <button mat-raised-button class="mat-primary" type="button"  (click)="onNoClick()">Cancel</button>
+        </div>
+      </div>
+      <div class="common-button">
+        <div class="next-btn">
+          <button mat-raised-button class="mat-primary" type="button"  (click)="submitForm()" [disabled]="!form.valid">Ok</button>
+        </div>
+      </div>
+    </div>
+</form>

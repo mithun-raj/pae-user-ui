@@ -1,0 +1,9 @@
+<mat-icon
+  [id]="iconId"
+  class="{{ size }} {{ color }} {{ clickable ? 'pointer' : '' }}"
+  [ngClass]="styleClass"
+  [svgIcon]="name"
+  [matTooltip]="tooltip"
+  (click)="onClick($event)"
+>
+</mat-icon>
