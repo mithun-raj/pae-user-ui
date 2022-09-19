@@ -1,11 +1,16 @@
 <mat-toolbar>     
-    <div fxLayout="row" fxLayoutAlign="space-between center" class="header-cont"> <img src="assets/logo.jpg" style="width: 170px;"/>
-      <div></div>  <button mat-icon-button color="primary"  [matMenuTriggerFor]="menu"> <mat-icon>more_vert</mat-icon></button>
+    <div fxLayout="row" fxLayoutAlign="space-between center" class="header-cont"> <img src="{{asset}}" style="width: 170px;"/>
+      <div class="alert alert-primary" role="alert" style="    margin-bottom: 0px;
+      height: -4px;
+      padding: 0px;
+      padding-left: 10px;
+      padding-right: 10px;">
+       {{notification}}
+      </div>  <button mat-icon-button color="primary"  [matMenuTriggerFor]="menu"> <mat-icon>more_vert</mat-icon></button>
     
       <mat-menu #menu="matMenu">
-        <button mat-menu-item (click)="setLang('EN-US')">
-            <span>Engish</span></button>
-        <button mat-menu-item (click)="setLang('AR')">
-            <span>Arabic</span></button>
+        <button mat-menu-item (click)="setLang(lan.id)"   *ngFor="let lan of language" >
+            <span>{{lan.name}}</span></button>
+        
       </mat-menu></div>
 </mat-toolbar>
